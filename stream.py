@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 # --- Configuration Manager ---                                                                                                              
                                                                                                                                              
 class Config:                                                                                                                                
-    FILE_NAME = "lobster_config.json"                                                                                                        
+    FILE_NAME = "stream_config.json"                                                                                                        
                                                                                                                                              
     DEFAULTS = {                                                                                                                             
         "base_url": "https://flixhq.to",                                                                                                     
@@ -75,7 +75,7 @@ def check_dependencies():
                                                                                                                                              
 # --- Main Application ---                                                                                                                   
                                                                                                                                              
-class LobsterApp:                                                                                                                            
+class StreamApp:                                                                                                                            
     def __init__(self):                                                                                                                      
         self.config = Config()                                                                                                               
         self.session = requests.Session()                                                                                                    
@@ -427,4 +427,4 @@ class LobsterApp:
                                                                                                                                              
 if __name__ == "__main__":                                                                                                                   
     check_dependencies()                                                                                                                     
-    LobsterApp().run()                                                                                                                       
+    StreamApp().run()                                                                                                                       
