@@ -27,7 +27,7 @@ Before you begin, ensure you have the following installed on your system:
 
 1.  **Download the script**:
     ```bash
-    curl -o yt-browser.py https://raw.githubusercontent.com/Blend973/stream/main/stream.py
+    curl -o stream.py https://raw.githubusercontent.com/Blend973/stream/main/stream.py
     ```
 
 2.  **Install Python Dependencies**
