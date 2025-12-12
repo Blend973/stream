@@ -1,5 +1,4 @@
-# stream
-# Lobster Stream
+# Stream
 
 A command-line tool to search and stream movies and TV shows directly from your terminal using the MPV media player.
 
@@ -11,7 +10,7 @@ A command-line tool to search and stream movies and TV shows directly from your 
 -   Automatic subtitle fetching for the configured language.
 -   Autoplay support for binging episodes.
 -   Customizable `mpv` player options for a tailored viewing experience.
--   Persistent settings via an automatically generated `lobster_config.json` file.
+-   Persistent settings via an automatically generated `stream_config.json` file.
 
 ## Prerequisites
 
@@ -26,32 +25,43 @@ Before you begin, ensure you have the following installed on your system:
 
 ## Installation
 
-1.  **Get the Script**
-    Download the `stream3.py` script to your local machine.
+1.  **Download the script**:
+    ```bash
+    curl -o yt-browser.py https://raw.githubusercontent.com/Blend973/stream/main/stream.py
+    ```
 
 2.  **Install Python Dependencies**
     Open your terminal and install the required Python libraries using pip:
     ```bash
     pip install requests beautifulsoup4
     ```
+    or using pipx,
+    ```bash
+    pipx install requests beautifulsoup4
+    ```
+    or you can use package manager of your Distro.
 
 3.  **Make the Script Executable (for Linux/macOS)**
     Navigate to the script's directory and run:
     ```bash
-    chmod +x stream3.py
+    chmod +x stream.py
     ```
-
+3.  **Move it to your PATH**:
+    Move the script to a directory in your system's `PATH` to make it accessible from anywhere. A common choice is `/usr/local/bin`.
+    ```bash
+    sudo mv stream.py /usr/local/bin/stream
+    ```
 ## Usage Instructions
 
 1.  **Run the script from your terminal:**
     ```bash
-    ./stream3.py
+    stream
     ```
     On Windows, you might run it using:
     ```bash
-    python stream3.py
+    python stream.py
     ```
-    On the first run, a `lobster_config.json` file will be created in the same directory with default settings.
+    On the first run, a `stream_config.json` file will be created in the same directory with default settings.
 
 2.  **Search for Media:**
     When prompted, type a movie or TV show title and press Enter.
@@ -82,7 +92,7 @@ Before you begin, ensure you have the following installed on your system:
 
 ## Configuration
 
-The script's behavior can be customized via the `lobster_config.json` file or the in-app `settings` menu.
+The script's behavior can be customized via the `stream_config.json` file or the in-app `settings` menu.
 
 | Setting       | Description                                                                          | Default Value     | Options                               |
 |---------------|--------------------------------------------------------------------------------------|-------------------|---------------------------------------|
