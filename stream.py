@@ -22,7 +22,7 @@ class Config:
         "quality": "Best",      # Options: Best, 1080, 720, 480, 360                                                                         
         "sub_language": "english",                                                                                                           
         "autoplay": False,                                                                                                                   
-        "mpv_options": "--fs --force-window=immediate"                                                                                       
+        "mpv_options": ""                                                                                       
     }                                                                                                                                        
                                                                                                                                              
     def __init__(self):                                                                                                                      
